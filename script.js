@@ -2,63 +2,223 @@
 // to an emoji. This quiz has no wrong answers — the highest score decides the result.
 const questions = [
   {
-    prompt: "You have a completely free Saturday. What sounds best?",
-    icon: "☀️",
-    choices: [
-      { text: "Invite people out for a fun plan", emoji: "🌞" },
-      { text: "Make something or learn a new skill", emoji: "🌱" },
-      { text: "Try an exciting place or activity", emoji: "🔥" },
-      { text: "Relax and see where the day takes me", emoji: "🌊" }
+    "prompt": "You step into an unfamiliar cafe. Which detail catches your eye first?",
+    "icon": "☕",
+    "choices": [
+      {
+        "text": "A table covered in handwritten notes",
+        "emoji": "🌞"
+      },
+      {
+        "text": "A shelf of cups with tiny labels",
+        "emoji": "🌱"
+      },
+      {
+        "text": "A drink with an unfamiliar name",
+        "emoji": "🔥"
+      },
+      {
+        "text": "A window seat overlooking the street",
+        "emoji": "🌊"
+      }
     ]
   },
   {
-    prompt: "A small problem appears in a group project. You usually...",
-    icon: "💡",
-    choices: [
-      { text: "Encourage everyone and keep the mood positive", emoji: "🌞" },
-      { text: "Research it carefully before suggesting a fix", emoji: "🌱" },
-      { text: "Volunteer to handle it right away", emoji: "🔥" },
-      { text: "Listen to the group and help everyone adjust", emoji: "🌊" }
+    "prompt": "There is one photo left on a disposable camera. What do you use it for?",
+    "icon": "📷",
+    "choices": [
+      {
+        "text": "A doorway you cannot quite see beyond",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Light falling across the floor",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Everyone squeezing into the frame",
+        "emoji": "🌞"
+      },
+      {
+        "text": "A detail you almost walked past",
+        "emoji": "🌱"
+      }
     ]
   },
   {
-    prompt: "Which message would make you happiest to receive?",
-    icon: "💌",
-    choices: [
-      { text: "“Come celebrate with us!”", emoji: "🌞" },
-      { text: "“I found a workshop you might love.”", emoji: "🌱" },
-      { text: "“Want to try something totally new?”", emoji: "🔥" },
-      { text: "“No pressure — let's just hang out.”", emoji: "🌊" }
+    "prompt": "You find a secondhand book with something tucked inside. What would you hope it is?",
+    "icon": "📖",
+    "choices": [
+      {
+        "text": "A pressed leaf with a date beside it",
+        "emoji": "🌱"
+      },
+      {
+        "text": "A ticket to a place you have never heard of",
+        "emoji": "🔥"
+      },
+      {
+        "text": "A note meant for the next reader",
+        "emoji": "🌞"
+      },
+      {
+        "text": "A faded photograph of the sea",
+        "emoji": "🌊"
+      }
     ]
   },
   {
-    prompt: "Your ideal creative space feels...",
-    icon: "🎨",
-    choices: [
-      { text: "Bright, lively, and full of people", emoji: "🌞" },
-      { text: "Quiet, cozy, and full of ideas", emoji: "🌱" },
-      { text: "Bold, energetic, and a little chaotic", emoji: "🔥" },
-      { text: "Open, calm, and easy to change", emoji: "🌊" }
+    "prompt": "Your train is twenty minutes late. What fills the extra time?",
+    "icon": "🚉",
+    "choices": [
+      {
+        "text": "Watching the platforms fill and empty",
+        "emoji": "🌊"
+      },
+      {
+        "text": "Looking up the town on the departure board",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Picking a snack for your travel companion",
+        "emoji": "🌞"
+      },
+      {
+        "text": "Exploring the shops at the far end of the station",
+        "emoji": "🔥"
+      }
     ]
   },
   {
-    prompt: "When plans suddenly change, you tend to...",
-    icon: "🗺️",
-    choices: [
-      { text: "Find a new way to make it fun", emoji: "🌞" },
-      { text: "Pause and make a thoughtful new plan", emoji: "🌱" },
-      { text: "Jump into the new challenge", emoji: "🔥" },
-      { text: "Go with the flow", emoji: "🌊" }
+    "prompt": "A friend hands you a blank postcard. Which picture would you put on the front?",
+    "icon": "💌",
+    "choices": [
+      {
+        "text": "A long table with a few chairs still waiting",
+        "emoji": "🌞"
+      },
+      {
+        "text": "A staircase disappearing around a corner",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Curtains moving beside an open window",
+        "emoji": "🌊"
+      },
+      {
+        "text": "A tiny garden growing in an old teacup",
+        "emoji": "🌱"
+      }
     ]
   },
   {
-    prompt: "Pick a tiny superpower for today.",
-    icon: "✨",
-    choices: [
-      { text: "Make everyone nearby smile", emoji: "🌞" },
-      { text: "Understand any new idea instantly", emoji: "🌱" },
-      { text: "Have unlimited confidence", emoji: "🔥" },
-      { text: "Stay calm in every situation", emoji: "🌊" }
+    "prompt": "You can bring home one small souvenir from a trip. Which one do you choose?",
+    "icon": "🧳",
+    "choices": [
+      {
+        "text": "A smooth stone from a favorite path",
+        "emoji": "🌊"
+      },
+      {
+        "text": "A local game to bring out after dinner",
+        "emoji": "🌞"
+      },
+      {
+        "text": "A map with a route to try next time",
+        "emoji": "🔥"
+      },
+      {
+        "text": "A print showing how an old building was made",
+        "emoji": "🌱"
+      }
+    ]
+  },
+  {
+    "prompt": "A film never explains what was inside a locked room. What stays with you?",
+    "icon": "🎬",
+    "choices": [
+      {
+        "text": "An object that appeared in two earlier scenes",
+        "emoji": "🌱"
+      },
+      {
+        "text": "The rain in the final shot",
+        "emoji": "🌊"
+      },
+      {
+        "text": "A possible way back into the room",
+        "emoji": "🔥"
+      },
+      {
+        "text": "A conversation the characters never finished",
+        "emoji": "🌞"
+      }
+    ]
+  },
+  {
+    "prompt": "You are filling a box to open a year from now. What goes in first?",
+    "icon": "📦",
+    "choices": [
+      {
+        "text": "A list of places you have yet to visit",
+        "emoji": "🔥"
+      },
+      {
+        "text": "A receipt from an ordinary afternoon you liked",
+        "emoji": "🌊"
+      },
+      {
+        "text": "A page from a project still taking shape",
+        "emoji": "🌱"
+      },
+      {
+        "text": "A note about a conversation you want to remember",
+        "emoji": "🌞"
+      }
+    ]
+  },
+  {
+    "prompt": "At a night market, you have time for one last stop. Which stall draws you in?",
+    "icon": "🏮",
+    "choices": [
+      {
+        "text": "A booth printing portraits of pairs and groups",
+        "emoji": "🌞"
+      },
+      {
+        "text": "Someone repairing old music boxes",
+        "emoji": "🌱"
+      },
+      {
+        "text": "A tea stand beside the river",
+        "emoji": "🌊"
+      },
+      {
+        "text": "A food cart with a menu you cannot quite translate",
+        "emoji": "🔥"
+      }
+    ]
+  },
+  {
+    "prompt": "Choose the opening scene for a short story. Where does it begin?",
+    "icon": "✍️",
+    "choices": [
+      {
+        "text": "An envelope arrives with one detail out of place",
+        "emoji": "🌱"
+      },
+      {
+        "text": "Someone steps off a bus one stop too early",
+        "emoji": "🔥"
+      },
+      {
+        "text": "Two people reach for the same forgotten umbrella",
+        "emoji": "🌞"
+      },
+      {
+        "text": "A familiar street just after the rain stops",
+        "emoji": "🌊"
+      }
     ]
   }
 ];
@@ -138,7 +298,7 @@ function showQuestion() {
     button.dataset.emoji = choice.emoji;
     button.dataset.index = index;
     button.setAttribute("aria-pressed", "false");
-    button.innerHTML = `<span class="choice__number">${index + 1}</span><span class="choice__emoji" aria-hidden="true">${choice.emoji}</span><span class="choice__text">${choice.text}</span>`;
+    button.innerHTML = `<span class="choice__number">${index + 1}</span><span class="choice__text">${choice.text}</span>`;
     choicesContainer.appendChild(button);
   });
 }
@@ -153,7 +313,7 @@ function chooseAnswer(button) {
   button.setAttribute("aria-pressed", "true");
   selectedEmoji = button.dataset.emoji;
   nextButton.disabled = false;
-  feedback.textContent = `Nice choice — ${selectedEmoji} is getting a point!`;
+  feedback.textContent = "Answer saved. You can still change your choice.";
 }
 
 function goToNextQuestion() {
