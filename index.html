@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A playful personality quiz that reveals your emoji." />
+    <title>Which Emoji Are You?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="quiz-shell">
+      <section class="quiz-card" aria-labelledby="quiz-title">
+        <header class="brand">
+          <span class="brand__sparkle" aria-hidden="true">✦</span>
+          <p>MINI PERSONALITY QUIZ</p>
+        </header>
+
+        <section id="welcome-screen" class="screen welcome-screen">
+          <p class="hero-emoji" aria-hidden="true">🌞 🌱 🔥 🌊</p>
+          <h1 id="quiz-title">Which emoji<br />are you?</h1>
+          <p class="intro">Answer a few little questions. Your choices will reveal the emoji that matches your energy.</p>
+          <button id="start-button" class="button button--primary" type="button">Start the quiz <span aria-hidden="true">→</span></button>
+          <p class="keyboard-note"><span aria-hidden="true">⌨</span> You can also use keys 1–4 to choose an answer.</p>
+        </section>
+
+        <section id="question-screen" class="screen question-screen hidden" aria-live="polite">
+          <div class="question-topline">
+            <p id="progress-text">Question 1 of 6</p>
+            <p id="question-emoji" class="question-emoji" aria-hidden="true">☀️</p>
+          </div>
+          <div class="progress-track" aria-label="Quiz progress"><div id="progress-bar" class="progress-bar"></div></div>
+          <h2 id="question-text">Loading question...</h2>
+          <div id="choices" class="choices" role="group" aria-label="Answer choices"></div>
+          <p id="feedback" class="feedback" aria-live="assertive"></p>
+          <button id="next-button" class="button button--primary button--next" type="button" disabled>Next question <span aria-hidden="true">→</span></button>
+        </section>
+
+        <section id="result-screen" class="screen result-screen hidden" aria-live="polite">
+          <p class="result-label">YOUR EMOJI IS</p>
+          <p id="result-emoji" class="result-emoji" aria-hidden="true">🌞</p>
+          <h2 id="result-title">The Sun Emoji</h2>
+          <p id="result-description" class="result-description"></p>
+          <p id="result-detail" class="result-detail"></p>
+          <button id="restart-button" class="button button--primary" type="button">Try again <span aria-hidden="true">↻</span></button>
+        </section>
+      </section>
+      <p class="footer-note">Made with curiosity, color, and a little ✨</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
